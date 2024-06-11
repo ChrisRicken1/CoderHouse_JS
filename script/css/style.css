@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .createPJ-container {
+  text-align: center;
+  width: 500px;
+  height: 400px;
+  background-color: rgb(244, 235, 226);
+  padding: 50px;
+  margin-top: 100px;
+}
+
+body {
+  background-image: url(../../images/upgradev2.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+}
+body .pj-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  height: 95%;
+  background-color: rgb(244, 235, 226);
+  padding: 10px;
+  margin-top: 20px;
+}
+body .pj-container .estadisticas {
+  padding: 5px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  grid-template-areas: "nick" "clase" "titulo" "lista" "puntos";
+}
+body .pj-container .estadisticas h1 {
+  grid-area: nick, clase;
+  font-weight: bold;
+}
+body .pj-container .estadisticas h2 {
+  grid-area: titulo;
+  font-weight: bold;
+}
+body .pj-container .estadisticas ol {
+  grid-area: lista;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body .pj-container .estadisticas ol li {
+  padding-bottom: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+body .pj-container .estadisticas h4 {
+  grid-area: puntos;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
