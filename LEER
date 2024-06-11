@@ -1,4 +1,6 @@
 profe, le dejo mis dudas y unas aclaraciones:
 1- Solo cree la ventana "personaje" por el momento.
 2- No pude actualizar el link de la ventana principal(indice)
-3- En la funcion "characterCreation()" del "script.js" en el inspector me indicaba que tenia que agregar la linea que comente, pero al agregarla el "window.location.href" no me funcionaba, no me dejaba redireccionar la pagina. No supe como solucionar esto.
+3- En la funcion "characterCreation()" del "script.js" en el inspector me indicaba que tenia que agregar la linea que comente, pero al agregarla el "window.location.href" no me funcionaba 
+no me dejaba redireccionar la pagina. No supe como solucionar esto.
+4- No supe como poner un limite a la estadisticas, me refiero a que, si eligen la clase "guerrero" que no puedan disminuir las estadisticas base de este. Lo mismo si suben de nivel, no se como hacer la limitancia de esto.
