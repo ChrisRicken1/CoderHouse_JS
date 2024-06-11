@@ -42,11 +42,7 @@ function characterCreation() {
             // Almacenar el personaje en localStorage
             setCharacter(character);
             window.location.href = 'D:/CoderHouse_JS/html/personaje1.html';
-            const enlacePersonaje = document.querySelector('.nav-personaje');
-            if(enlacePersonaje){
-                enlacePersonaje.href = 'html/personaje1.html'
-            }
-            });
+        })
     //});
 }
 
@@ -68,10 +64,20 @@ function setCharacter(character){
     localStorage.setItem('character', JSON.stringify(character));
 }
 
+/*function updateLink(){
+        const enlacePersonaje = document.querySelector('.nav-personaje');
+        // Verificar si se encontró el enlace
+        if (enlacePersonaje) {
+            // Cambiar el atributo href
+            enlacePersonaje.href = 'D:/CoderHouse_JS/html/personaje1.html';
+        }
+}*/
+
 
 function main() {
     document.addEventListener('DOMContentLoaded', function() {
         characterCreation();
+        // updateLink();
     });
 }
 
