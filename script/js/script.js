@@ -41,10 +41,11 @@ function characterCreation() {
             }
             // Almacenar el personaje en localStorage
             setCharacter(character);
-            
-            localStorage.setItem('redirected', 'true');
-
             window.location.href = 'D:/CoderHouse_JS/html/personaje1.html';
+            const enlacePersonaje = document.querySelector('.nav-personaje');
+            if(enlacePersonaje){
+                enlacePersonaje.href = 'html/personaje1.html'
+            }
             });
     //});
 }
@@ -55,7 +56,7 @@ function getCharacter() {
 
     // Verificar si hay algo almacenado bajo la clave 'character'
     if (characterJSON) {
-        // Convertir el JSON a un objeto JavaScript
+        // Convertir el JSON a un objeto
         const character = JSON.parse(characterJSON);
         return character;
     } else {

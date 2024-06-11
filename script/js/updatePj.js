@@ -20,11 +20,12 @@ function getCharacter() {
     }
 }
 
-function updateNick() {
+function updatePJ() {
     const character = getCharacter();
     if (character) {
         const characterNick = character.nombre;
         const characterClass = character.clase;
+        //Seteo las estadisticas y nombres del personaje segun la clase
         const characterNickElement = document.getElementById('nick');
         const characterClassElement = document.getElementById('clase');
         document.getElementById('vitalidad').textContent = character.stats.vitalidad;
@@ -36,12 +37,13 @@ function updateNick() {
         document.getElementById('puntosDisponibles').textContent = character.skillpoints;
         characterNickElement.textContent = characterNick;
         characterClassElement.textContent = capitalizeFirstLetter(characterClass);
+        
     }
 }
 
 function main(){
     document.addEventListener('DOMContentLoaded', function() {
-        updateNick();
+        updatePJ();
     });    
 }
 
