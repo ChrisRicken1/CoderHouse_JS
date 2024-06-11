@@ -41,7 +41,7 @@ function characterCreation() {
             }
             // Almacenar el personaje en localStorage
             setCharacter(character);
-            window.location.href = 'D:/CoderHouse_JS/html/personaje1.html';
+            window.location.href = 'personaje1.html';
         })
     //});
 }
